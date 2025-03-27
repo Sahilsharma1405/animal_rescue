@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        #signup table{
+            border: 2px solid black;
+            height: 500px;
+            width: 500px;
+            padding: 5px;
+        }
+        #signup table .in, #login table .in{
+            width: 100%;
+            border: 0;
+            border-bottom: 2px solid black;
+            outline: none;
+            background: transparent;
+        }
+        #login table{
+            border: 2px solid black;
+            height: 500px;
+            width: 500px;
+            padding: 5px;
+        }
+        #login table .btn{
+            background: orange;
+            font-size: 20px;
+            cursor: pointer;
+            color: black;
+            font-weight: 500;
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 70px;
+            height: 40px;
+            transition: .5s;
+        }
+        #login table .btn:hover{
+            background: black;
+            color: green;
+            transform: translateX(10px);
+        }
+        #signup table .btn{
+            background: orange;
+            font-size: 20px;
+            cursor: pointer;
+            color: black;
+            font-weight: 500;
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 90px;
+            height: 40px;
+            transition: .5s;
+        }
+        #signup table .btn:hover{
+            background: black;
+            color: green;
+            transform: translateX(10px);
+        }
+    </style>
+</head>
+<body >
+    <form action="" method="post" id="login" >
+        <table style="border: 2px solid black; margin: 10px; margin-left: 35%; ">
+            <tr align="center" style="font-size: 30px; font-weight: 400;">
+                <td>Login</td>
+            </tr>
+            <tr>
+                <td><input class="in" type="text" placeholder="Username" style="font-size: 20px;" required></td>
+            </tr>
+            <tr>
+                <td><input class="in" type="password" style="font-size: 20px;" placeholder="Password" id="pass" onblur="validatePassword()" required></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox">Remember me</td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btn" onclick="direct()" value="Login"></td>
+            </tr>
+            <tr>
+                <td>Don't have an account?<a href="#" style="text-decoration: none;" onclick="signup()"> Sign Up</a></td>
+            </tr>   
+        </table>
+    </form>
+    <form action="" id="signup"  style="display: none;">
+        <table style="border: 2px solid black; margin: 10px; margin-left: 35%; ">
+            <tr align="center" style="font-size: 30px; font-weight: 400;">
+                <td>Sign Up</td>
+            </tr>
+            <tr>
+                <td><input class="in" type="text" placeholder="Username"  required style="font-size: 20px;" id="userName"></td>
+            </tr>
+            <tr>
+                <td><input class="in" type="email" placeholder="email" style="font-size: 20px;"></td>
+            </tr>
+            <tr>
+                <!-- <td><input class="in" id="pass1" type="password" placeholder="Password"  style="font-size: 20px;" onblur="validatePassword()" required></td> -->
+                <td><input type="password" placeholder="Password" name="" id="pass" onblur="validatePassword()" style="font-size: 20px;"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" required>I agree to the terms & conditions</td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btn" value="Sign Up" onclick="openLog()" style="font-size: 20px;"></td>
+            </tr>
+            <tr>
+                <td>Already have an account?<a href="#" style="text-decoration: none;" onclick="login()">Login</a></td>
+            </tr>   
+        </table>
+    </form>
+    <div class="row footer1">
+        <div class="col-sm" style="color: black; font-weight: 700; font-size: 18px;">
+             <h2>Contact Us</h2>
+             <p>Email:-purrfect108@gmail.com</p>
+             <p>Phone:-6352236484</p>
+             <p>Address:-567 Pet Haven Street<br>Animalia Nagar, Mumbai Maharashtra <br>400001 India</p>
+        </div>
+        <div class="col-sm" style="display: flex; flex-direction: column;">
+             <h2>Quick Link</h2>
+             <a href="individual.html" class="anchor">Home</a>
+             <a href="aboutUs.html" class="anchor">About Us</a>
+             <a href="contact.html" class="anchor">Contact Us</a>
+        </div>
+        <div class="col-sm" style="display: flex; flex-direction: column; align-items: center;">
+             <h2>Follow Us</h2>
+             <i class="bi bi-facebook facebook" style="font-size: 30px;" onclick="facebook()"></i>
+             <i class="bi bi-twitter twitter" style="font-size: 30px;" onclick="twitter()"></i>
+             <i class="bi bi-whatsapp whatsapp" style="font-size: 30px;" onclick="whatsapp()"></i>
+             <img src="social.png" alt="" style="width: 35px;" class="instagram" onclick="instagram()">
+        </div>
+        <div class="row" style="background: black; height: 40px; padding-top: 4px ;">
+             <a href="#" style="text-decoration: none; font-size: 18px; font-weight: 5000;">@2019 your company. All right preserved</a>
+        </div>
+     </div>
+     <script>
+        let password=document.getElementById("pass").value
+        function validatePassword()
+        {
+            if(password.length<8)
+            {
+                alert('Password length must not be less than 8 digits.')
+            }
+        }
+     </script>
+</body>
+</html>

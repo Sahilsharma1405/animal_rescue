@@ -1,0 +1,699 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: auto;
+}
+
+/* img{
+    width: 100%;
+    height: auto;
+} */
+
+header{
+    /* position: absolute; */
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding:20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* background: linear-gradient(to right,orange,rgba(255, 166, 0, 0.537)); */
+    background: orange;
+}
+
+h2{     
+    margin-left: 40px;
+}
+.navigation{
+    display: flex;
+    flex-wrap:wrap ;
+    margin-right: 40px;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 40px;
+    color: white;
+    font-weight: 600;
+    color: black;
+    margin-top: 10px;
+    z-index: 99;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: -6px;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition:transform .5s;
+}
+
+.navigation a:hover:not(.active)::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+
+.navigation .active{
+    background: black;
+    color: green;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.navigation button{
+    width: 140px;
+    height: 50px;
+    background: transparent;
+    /* border: 2px solid white; */
+    border-radius: 10px;
+    font-size: 20px;
+    /* color: white; */
+    cursor: pointer;
+    font-weight: 600;
+    margin-left: 40px;
+}
+
+.navigation button:hover{
+    background: black;
+    color: green;
+    transition: .5s;
+}
+
+
+.middle{
+    /* position: absolute; */
+    /* top: 90px; */
+    /* border: 2px solid black; */
+    /* display: flex; */
+    /* flex-wrap:wrap ; */
+    width: 100%;
+    /* height:80%; */
+    overflow: hidden;
+    background: white;
+}
+
+.middle .carousel .content{
+    /* margin-top: 120px; */
+    padding-top: 120px;
+    margin-left: 170px;
+    z-index: 2;
+}
+
+.middle .carousel .content h1{
+    font-size: 60px;
+    font-weight: 700;
+    color: black;
+}
+
+.middle .carousel .content p{
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: 60;
+    color: black;
+}
+
+.middle .carousel .content button{
+    position: relative;
+    margin-top: 25px;
+    margin-left: 10px;
+    height: 40px;
+    width: 120px;
+    background-color: black;
+    color: green;
+    z-index: 2;
+    transition: .5s;
+    border-radius: 20px;
+}
+
+.middle .content button:hover{
+    background: white;
+    color: black;
+}
+
+
+.middle .carousel{
+    /* position: absolute; */
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid black ; */
+    /* top: 0; */
+    z-index: 1;
+}
+
+.middle .carousel .carousel-inner{
+    /* border: 2px solid black;  */
+    width: 40em;
+    /* height: 100%; */
+    float: inline-end;
+}
+
+.middle .carousel .carousel-inner .carousel-item img{
+    margin-top: 18px;
+    border-radius: 10px;
+    max-width: 100%;
+    height: 37em;
+}
+
+.middle .carousel button{
+    width: 20px;
+    height: 20px;
+    margin-top: 250px;
+}
+
+.footer1{
+    background: orange;
+    width: auto;
+    height: 400px;
+    text-align: center;
+}
+
+.footer1 .anchor{
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.adoptt{
+    margin-top: 80px;
+    margin-left: 100px;
+    width: 250px;
+    height: 250px;
+    /* border: 2px solid rgb(0, 48, 15); */
+    text-align: center;
+    cursor: pointer;
+}
+
+.adoptt:hover{
+    transform: scale(1.2,1.2);
+    transition: transform .2s;
+}
+
+.adoptt img{
+    margin-top: 30px;
+    width: 120px;
+    height: 100px;
+}
+
+.adoptt h4{
+    margin-top: 30px;
+    font-weight: 800;
+    color: darkcyan;
+}
+
+.adoptt p{
+    font-size: 12px;
+    color: darkcyan;
+    font-weight: bold;
+}
+
+.donate{
+    margin-top: 60px;
+    /* margin-left: 500px; */
+    width: 250px;
+    height: 270px;
+    /* border: 2px solid rgb(0, 48, 15); */
+    text-align: center;
+    /* padding: 30px; */
+    cursor: pointer;
+}
+
+.donate:hover{
+    transform: scale(1.2,1.2);
+    transition: transform .2s;
+}
+
+.donate img{
+    margin-top: 15px;
+    width: 200px;
+    height: 170px;
+}
+
+.donate h4{
+    font-weight: 800;
+    color: darkcyan;
+}
+
+.donate p{
+    font-size: 12px;
+    color: darkcyan;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.foster{
+    margin-top: 64px;
+    margin-left: 100px;
+    width: 250px;
+    height: 270px;
+    /* border: 2px solid rgb(0, 48, 15); */
+    text-align: center;
+    cursor: pointer;
+}
+
+.foster:hover{
+    transform: scale(1.2,1.2);
+    transition: transform .2s;
+}
+
+.foster img{
+    margin-top: 15px;
+    width: 140px;
+    height: 120px;
+}
+
+.foster h4{
+    margin-top: 30px;
+    font-weight: 800;
+    color: darkcyan;
+}
+
+.foster p{
+    font-size: 12px;
+    color: darkcyan;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.volunteer{ 
+    margin-top: 47px;
+    /* margin-left: 100px; */
+    width: 270px;
+    height: 270px;
+    /* border: 2px solid rgb(0, 48, 15); */
+    text-align: center;
+    cursor: pointer;
+}
+
+.volunteer:hover{
+    transform: scale(1.2,1.2);
+    transition: transform .2s;
+}
+
+.volunteer img{
+    margin-top: 15px;
+    width: 260px;
+    height: 170px;
+}
+
+.volunteer h4{
+    /* margin-top: 10px; */
+    font-weight: 800;
+    color: darkcyan;
+}
+
+.volunteer p{
+    font-size: 12px;
+    color: darkcyan;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.video_p{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 27px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    color: darkcyan;
+    font-weight: bold;
+    font-family:monospace;   
+}
+
+iframe{
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-top: 15px;
+    box-shadow: 5px 5px 5px orangered;
+    transition: .6s;
+}
+
+iframe:hover{
+    box-shadow: 12px 12px 12px orangered;
+}
+
+.footer_img{
+    margin-top: 10px;
+}
+
+.footer{
+    top:0;
+    width: 100%;
+    height: 500px;
+    background: rgb(247, 166, 15);
+}
+
+/* Adoption Page */
+.adopt_page{
+    display: flex;
+}
+
+.filter{
+    position: relative;
+    margin: 40px;
+    border: 1px solid black;
+    width: 350px;
+    height: 400px;
+    padding: 10px;
+}
+
+.filter h3{
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.filter select{
+    position: relative;
+    width:320px;
+    height: 50px;
+}
+
+.filter button{
+    margin-top: 30px;
+    width: 250px;
+    text-align: center;
+    height: 40px;
+    margin-left: 45px;
+    background: black;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.filter button:hover{
+    
+    background: orange;
+    box-shadow: 5px 5px 5px black
+}
+
+.facebook ,.twitter ,.whatsapp,.instagram{
+    cursor: pointer;
+}
+
+.dog1:hover{
+    transition: .5s;
+    box-shadow: 10px 10px 10px black;
+}
+
+.dog2:hover{
+    transition: .5s;
+    box-shadow: 10px 10px 10px black;
+}
+
+.dog3:hover{
+    transition: .5s;
+    box-shadow: 10px 10px 10px black;
+}
+
+.dog4:hover{
+    transition: .5s;
+    box-shadow: 10px 10px 10px black;
+}
+
+.dog5:hover{
+    transition: .5s;
+    box-shadow: 10px 10px 10px black;
+}
+
+.dog6:hover{
+    transition: .5s;
+    box-shadow: 10px 10px 10px black;
+}
+
+.dog7:hover{
+    transition: .5s;
+    box-shadow: 10px 10px 10px black;
+}
+
+.dog8:hover{
+    transition: .5s;
+    box-shadow: 10px 10px 10px black;
+}
+
+.dog9:hover{
+    transition: .5s;
+    box-shadow: 10px 10px 10px black;
+}
+
+.whatsapp{
+    color: #075E54;
+}
+
+.facebook{
+    color: blue;
+}
+
+.pagination{
+    display: flex;
+    float: right;
+    margin-top: 30px;
+    margin-right:20rem;
+}
+
+.pagination a{
+    display: block;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    width: 40px;
+    text-align: center;
+}
+
+.pagination a.active{
+    background-color: blue;
+    color: white;
+}
+
+.pagination a:hover:not(.active){
+    background: cyan;
+    transition: .6s;
+}
+
+
+/* Contact Us */
+.contact_head{
+    position: relative;
+    padding-top: 50px;
+}
+
+.contact_head .contact_head_inner{
+    position: relative;
+    text-align: center;
+}
+
+.contact_head .contact_head_inner span{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contact_head .contact_head_inner p{
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+
+.contact_form .con_form{
+    padding-left: 180px;
+}
+
+.contact_form .con_form .con_add{
+    margin-top: 20px;
+    padding-left: 50px;
+}
+
+.contact_form .con_form .con_add i{
+    width: auto;
+    font-size: 30px;
+    background: white;
+    border-radius: 50%;
+}
+
+.contact_form .con_form .con_add h4{
+    width: auto;
+    padding-top: 10px;
+    color: cyan;
+    font-weight: bold;
+}
+
+.contact_form .con_form .con_add .con_pre{
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.contact_form form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 30rem;
+    padding-left: 60px;
+}
+
+.contact_form form h3{
+    font-weight: bold;
+}
+
+.contact_form form input{
+    margin-top: 40px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    font-size: 20px;
+}
+
+.contact_form form textarea{
+    margin-top: 40px;
+    resize: none;
+    border: none;
+    font-size: 20px;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+.contact_form form .btn{
+    height: 40px;
+    background: cyan;
+    margin-top: 10px;
+    font-size: 20px;
+    transition: 2s;
+}
+
+.contact_form form .btn:hover{
+    background: linear-gradient(to right,rgb(169, 225, 244),cyan,rgb(126, 245, 245));
+}
+
+/* About Us*/
+
+.about_head{
+    width: auto;
+    display: inline;
+    font-weight: 700;
+    /* border: 2px solid black ; */
+    font-style: italic;
+}
+
+.about_p{
+    text-indent: 240px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.partners-sponsors h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.partners-sponsors p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.partner {
+    margin-bottom: 30px;
+}
+
+.partner-logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.partner-logo:hover {
+    transform: scale(1.1);
+}
+
+
+/* Donate page.*/
+.container .head{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(4, 174, 174);
+}
+
+.donatee{
+    padding-top: 80px;
+}
+
+.donatee span{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: rgb(4,174,174);
+    font-weight: 200;
+    text-indent: 80px;
+    font-size:35px;
+    margin-left: 100px
+}
+
+.donatee p{
+    margin-left: 100px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.donatee img{
+    background: orange;
+    border-radius: 30px;
+}
+
+.claim{
+    background: rgb(4, 174, 174);
+    height: 80px;
+    margin-top: 70px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    padding-top: 15px;
+    margin-bottom: 60px;
+}
+
+.pay{
+    height: 300px;
+    padding-top: 30px;
+    border: 8px solid orangered; 
+    text-align: center;
+    border-radius: 20px;
+}
+
+.pay p{
+    font-size: 20px;
+    margin-top:25px;
+}
+
+.low{
+    text-align: center;
+}

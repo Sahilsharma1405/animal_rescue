@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* @media only screen and (max-width:412px) {
+    
+} */
+header{
+    /* position: absolute; */
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding:20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* background: linear-gradient(to right,orange,rgba(255, 166, 0, 0.537)); */
+    background: orange;
+}
+
+h2{
+    margin-left: 40px;
+}
+.navigation{
+    display: flex;
+    flex-wrap:wrap ;
+    margin-right: 40px;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 40px;
+    color: white;
+    font-weight: 600;
+    color: black;
+    /* margin-top: 10px */
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: -6px;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition:transform .5s;
+}
+
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation button{
+    width: 140px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+    /* color: white; */
+    cursor: pointer;
+    font-weight: 600;
+    margin-left: 40px;
+}
+
+.navigation button:hover{
+    background: black;
+    color: green;
+    transition: .5s;
+}
+
+.middle{
+    /* position: absolute; */
+    top: 90px;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap:wrap ;
+    width: 100%;
+    /* height:80%; */
+    overflow: hidden;
+    background: white;
+}
+
+.middle .content{
+    margin-top: 120px;
+    margin-left: 170px;
+    z-index: 2;
+}
+
+.middle .content h1{
+    font-size: 60px;
+    font-weight: 700;
+    color: black;
+}
+
+.middle .content p{
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: 60;
+    color: black;
+}
+
+.middle .content button{
+    position: relative;
+    margin-top: 25px;
+    margin-left: 10px;
+    height: 40px;
+    width: 120px;
+    background-color: black;
+    color: green;
+    z-index: 2;
+    transition: .5s;
+    border-radius: 20px;
+}
+
+.middle .content button:hover{
+    background: white;
+    color: black;
+}
+
+.middle .content button i{
+    padding-left: 2px;
+    transform: scaleX(1);
+    transition: transform .5s;
+}
+
+/* .middle .content button i:hover{
+    transform: scaleX(2);
+    transform-origin: left
+} */
+
+
+.middle .carousel{
+    /* position: absolute; */
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid black ; */
+    top: 0;
+    z-index: 1;
+}
+
+.middle .carousel .carousel-inner{
+    /* border: 2px solid black;  */
+    width: 40em;
+    /* height: 100%; */
+    float: inline-end;
+}
+
+.middle .carousel .carousel-inner .carousel-item img{
+    width: 100%;
+    height: 37em;
+}
+
+.middle .carousel button{
+    width: 20px;
+    height: 20px;
+    margin-top: 250px;
+}
+
+
+.lower{
+    /* position: absolute; */
+    background: black;
+}

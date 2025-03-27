@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+</head>
+<body>
+    <script src="script.js"></script>
+    <p style="text-align:  center; margin: 40px; font-size: 30px; font-family:fantasy text-black-50">Animals Available for Adoption</p>
+    <div class="row adopt_page" >
+        <div class="col-sm" >
+            <div class="filter">
+                <h3 style="font-family: fantasy;">Pet Type</h3>
+                <select name="pet_type" style="font-size: 20px;">
+                    <option value="Dog" selected >Dog</option>
+                    <option value="Cat" disabled>Cat</option>
+                </select>
+                <br>
+                <h3>Search by State</h3>
+                <select name="state_name" style="font-size: 20px;">
+                    <option value="" selected disabled>Select state</option>
+                    <optgroup label="Arunachal Pradesh">
+                        <option value="East Sian">East Siang</option>
+                        <option value="Tezu">Tezu</option>
+                    </optgroup>
+                    <optgroup label="Gujarat">
+                        <option value="Ahmedabad">Ahmedabad</option>
+                        <option value="Jamnagar">Jamnagar</option>
+                        <option value="Surat">Surat</option>
+                        <option value="Vadodara">Vadodara</option>
+                    </optgroup>
+                   <optgroup label="Rajasthan">
+                       <option value="Ajmer">Ajmer</option>
+                       <option value="Bikaner">Bikaner</option>
+                       <option value="Jaipur">Jaipur</option>
+                       <option value="Jodhpur">Jodhpur</option>
+                   </optgroup>
+                </select>
+                <button type="button">Apply Filter</button>
+            </div>
+        </div>
+        <div class="col-sm right">
+            <div class="row" style="display: flex;">
+                <div class="col-sm dog1" style="width: 300px; height: 550px; padding: 20px;border: 1px solid rgb(248, 198, 206);">
+                    <center>
+                        <img src="dog1.jpg" alt="" style="width: 270px; height: 230px; margin-top: 20px;">
+                    </center>
+                    <div class="details" style="margin-top: 10px;">
+                        <p class="name" style="font-size: 30px;font-weight: bold;color: black;margin-bottom: 10px;">Candy</p>
+                        <p class="speci" style="font-weight: bold;">Male, Puppy</p>
+                        <p class="address" style="font-weight: bold;">Banglore, Karnataka</p>
+                    </div>
+                    <br>
+                    <hr size="1" color="black">
+                    <div class="contact">
+                        <p class="c_d" style="font-size: 15px; font-weight: bold; margin-top: 3px;">contact details-</p>
+                        <i class="bi bi-person-circle" style="font-size: 40px;"></i>
+                        <h6 class="d_name" style="text-align: left;font-weight: bold;font-size: 15px;">Name:Sunil</h6>
+                        <h6 class="num" style="display: inline;text-align: left;font-weight: bold;font-size: 15px;">Number:</h6><a href="#">contact now</a>
+                    </div>
+                    <br>
+                    <hr size="1" color="black">
+                    <p class="share">
+                    <p class="share1" style="font-weight: bold;">share with friends-</p>
+                    <div style="display: flex; align-items: center; justify-content: space-evenly;">
+                        <i class="bi bi-facebook facebook" style="font-size: 30px;" onclick="facebook()"></i>
+                        <i class="bi bi-twitter twitter" style="font-size: 30px;" onclick="twitter()"></i>
+                        <i class="bi bi-whatsapp whatsapp" style="font-size: 30px;" onclick="whatsapp()"></i>
+                        <img src="social.png" alt="" style="width: 35px;" class="instagram" onclick="instagram()">
+                    </div>
+                    <hr size="1" color="black">
+                    </p>
+                    <p class="detail" style="font-weight: bold; text-align: center;">
+                        show more details <i class="bi bi-box-arrow-up-right" style="cursor: pointer;"></i>
+                    </p>
+                </div>
+                <div class="col-sm dog2" style="width: 300px; height: 550px; padding: 20px; margin-left: 10px;border: 1px solid rgb(248, 198, 206);">
+                    <center>
+                        <img src="dog2.jpg" alt="" style="width: 270px; height: 230px; margin-top: 20px;">
+                    </center>
+                    <div class="details" style="margin-top: 10px;">
+                        <p class="name" style="font-size: 30px;font-weight: bold;color: black;margin-bottom: 10px;">Daisy</p>
+                        <p class="speci" style="font-weight: bold;">Female, Adulthood</p>
+                        <p class="address" style="font-weight: bold;">Mumbai, Maharashtra</p>
+                    </div>
+                    <br>
+                    <hr size="1" color="black">
+                    <div class="contact">
+                        <p class="c_d" style="font-size: 15px; font-weight: bold; margin-top: 3px;">contact details-</p>
+                        <i class="bi bi-person-circle" style="font-size: 40px;"></i>
+                        <h6 class="d_name" style="text-align: left;font-weight: bold;font-size: 15px;">Name:Hema</h6>
+                        <h6 class="num" style="display: inline;text-align: left;font-weight: bold;font-size: 15px;">Number:</h6><a href="#">contact now</a>
+                    </div>
+                    <br>
+                    <hr size="1" color="black">
+                    <p class="share">
+                    <p class="share1" style="font-weight: bold;">share with friends-</p>
+                    <div style="display: flex; align-items: center; justify-content: space-evenly;">
+                        <i class="bi bi-facebook facebook" style="font-size: 30px;" onclick="facebook()"></i>
+                        <i class="bi bi-twitter twitter" style="font-size: 30px;" onclick="twitter()"></i>
+                        <i class="bi bi-whatsapp whatsapp" style="font-size: 30px;" onclick="whatsapp()"></i>
+                        <img src="social.png" alt="" style="width: 35px;" class="instagram" onclick="instagram()">
+                    </div>
+                    <hr size="1" color="black">
+                    </p>
+                    <p class="detail" style="font-weight: bold; text-align: center;">
+                        show more details <i class="bi bi-box-arrow-up-right" style="cursor: pointer;"></i>
+                    </p>
+                </div>
+                <div class="col-sm dog3" style="width: 300px; height: 550px; padding: 20px; margin-left: 10px;border: 1px solid rgb(248, 198, 206);">
+                    <center>
+                        <img src="dog3.avif" alt="" style="width: 270px; height: 230px; margin-top: 20px;">
+                    </center>
+                    <div class="details" style="margin-top: 10px;">
+                        <p class="name" style="font-size: 30px;font-weight: bold;color: black;margin-bottom: 10px;">Leo</p>
+                        <p class="speci" style="font-weight: bold;">Male, Senior</p>
+                        <p class="address" style="font-weight: bold;">Rajgarh, Madhya pradesh</p>
+                    </div>
+                    <br>
+                    <hr size="1" color="black">
+                    <div class="contact">
+                        <p class="c_d" style="font-size: 15px; font-weight: bold; margin-top: 3px;">contact details-</p>
+                        <i class="bi bi-person-circle" style="font-size: 40px;"></i>
+                        <h6 class="d_name" style="text-align: left;font-weight: bold;font-size: 15px;">Name:Sunil</h6>
+                        <h6 class="num" style="display: inline;text-align: left;font-weight: bold;font-size: 15px;">Number:</h6><a href="#">contact now</a>
+                    </div>
+                    <br>
+                    <hr size="1" color="black">
+                    <p class="share">
+                    <p class="share1" style="font-weight: bold;">share with friends-</p>
+                    <div style="display: flex; align-items: center; justify-content: space-evenly;">
+                        <i class="bi bi-facebook facebook" style="font-size: 30px;" onclick="facebook()"></i>
+                        <i class="bi bi-twitter twitter" style="font-size: 30px;" onclick="twitter()"></i>
+                        <i class="bi bi-whatsapp whatsapp" style="font-size: 30px;" onclick="whatsapp()"></i>
+                        <img src="social.png" alt="" style="width: 35px;" class="instagram" onclick="instagram()">
+                    </div>
+                    <hr size="1" color="black">
+                    </p>
+                    <p class="detail" style="font-weight: bold; text-align: center;">
+                        show more details <i class="bi bi-box-arrow-up-right" style="cursor: pointer;"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="row" style="display: flex; margin-top: 20px;">
+                <div class="col-sm dog4" style="width: 300px; height: 550px; padding: 20px;border: 1px solid rgb(248, 198, 206);">
+                    <center>
+                        <img src="dog4.webp" alt="" style="width: 270px; height: 230px; margin-top: 20px;border: 1px solid rgb(248, 198, 206);">
+                    </center>
+                    <div class="details" style="margin-top: 10px;">
+                        <p class="name" style="font-size: 30px;font-weight: bold;color: black;margin-bottom: 10px;">Bella</p>
+                        <p class="speci" style="font-weight: bold;">Female, Adulthood</p>
+                        <p class="address" style="font-weight: bold;">Kolkata, West bengal</p>
+                    </div>
+                    <br>
+                    <hr size="1" color="black">
+                    <div class="contact">
+                        <p class="c_d" style="font-size: 15px; font-weight: bold; margin-top: 3px;">contact details-</p>
+                        <i class="bi bi-person-circle" style="font-size: 40px;"></i>
+                        <h6 class="d_name" style="text-align: left;font-weight: bold;font-size: 15px;">Name:Anup</h6>
+                        <h6 class="num" style="display: inline;text-align: left;font-weight: bold;font-size: 15px;">Number:</h6><a href="#">contact now</a>
+                    </div>
+                    <br>
+                    <hr size="1" color="black">
+                    <p class="share">
+                    <p class="share1" style="font-weight: bold;">share with friends-</p>
+                    <div style="display: flex; align-items: center; justify-content: space-evenly;">
+                        <i class="bi bi-facebook facebook" style="font-size: 30px;" onclick="facebook()"></i>
+                        <i class="bi bi-twitter twitter" style="font-size: 30px;" onclick="twitter()"></i>
+                        <i class="bi bi-whatsapp whatsapp" style="font-size: 30px;" onclick="whatsapp()"></i>
+                        <img src="social.png" alt="" style="width: 35px;" class="instagram" onclick="instagram()">
+                    </div>
+                    <hr size="1" color="black">
+                    </p>
+                    <p class="detail" style="font-weight: bold; text-align: center;">
+                        show more details <i class="bi bi-box-arrow-up-right" style="cursor: pointer;"></i>
+                    </p>
+                </div>
+                <div class="col-sm dog5" style="width: 300px; height: 550px; padding: 20px; margin-left: 10px;border: 1px solid rgb(248, 198, 206);">
+                    <center>
+                        <img src="dog5.jpg" alt="" style="width: 270px; height: 230px; margin-top: 20px;">
+                    </center>
+                    <div class="details" style="margin-top: 10px;">
+                        <p class="name" style="font-size: 30px;font-weight: bold;color: black;margin-bottom: 10px;">Bruno</p>
+                        <p class="speci" style="font-weight: bold;">Male, Adulthood</p>
+                        <p class="address" style="font-weight: bold;">Mumbai, Maharashtra</p>
+                    </div>
+                    <br>
+                    <hr size="1" color="black">
+                    <div class="contact">
+                        <p class="c_d" style="font-size: 15px; font-weight: bold; margin-top: 3px;">contact details-</p>
+                        <i class="bi bi-person-circle" style="font-size: 40px;"></i>
+                        <h6 class="d_name" style="text-align: left;font-weight: bold;font-size: 15px;">Name:Het</h6>
+                        <h6 class="num" style="display: inline;text-align: left;font-weight: bold;font-size: 15px;">Number:</h6><a href="#">contact now</a>
+                    </div>
+                    <br>
+                    <hr size="1" color="black">
+                    <p class="share">
+                    <p class="share1" style="font-weight: bold;">share with friends-</p>
+                    <div style="display: flex; align-items: center; justify-content: space-evenly;">
+                        <i class="bi bi-facebook facebook" style="font-size: 30px;" onclick="facebook()"></i>
+                        <i class="bi bi-twitter twitter" style="font-size: 30px;" onclick="twitter()"></i>
+                        <i class="bi bi-whatsapp whatsapp" style="font-size: 30px;" onclick="whatsapp()"></i>
+                        <img src="social.png" alt="" style="width: 35px;" class="instagram" onclick="instagram()">
+                    </div>
+                    <hr size="1" color="black">
+                    </p>
+                    <p class="detail" style="font-weight: bold; text-align: center;">
+                        show more details <i class="bi bi-box-arrow-up-right" style="cursor: pointer;"></i>
+                    </p>
+                </div>
+                <div class="col-sm dog6" style="width: 300px; height: 550px; padding: 20px; margin-left: 10px;border: 1px solid rgb(248, 198, 206);">
+                    <center>
+                        <img src="dog6.jpg" alt="" style="width: 270px; height: 230px; margin-top: 20px;">
+                    </center>
+                    <div class="details" style="margin-top: 10px;">
+                        <p class="name" style="font-size: 30px;font-weight: bold;color: black;margin-bottom: 10px;">Oscar</p>
+                        <p class="speci" style="font-weight: bold;">Male, Senior</p>
+                        <p class="address" style="font-weight: bold;">New Delhi,Delhi</p>
+                    </div>
+                    <br>
+                    <hr size="1" color="black">
+                    <div class="contact">
+                        <p class="c_d" style="font-size: 15px; font-weight: bold; margin-top: 3px;">contact details-</p>
+                        <i class="bi bi-person-circle" style="font-size: 40px;"></i>
+                        <h6 class="d_name" style="text-align: left;font-weight: bold;font-size: 15px;">Name:Hemlata</h6>
+                        <h6 class="num" style="display: inline;text-align: left;font-weight: bold;font-size: 15px;">Number:</h6><a href="#">contact now</a>
+                    </div>
+                    <br>
+                    <hr size="1" color="black">
+                    <p class="share">
+                    <p class="share1" style="font-weight: bold;">share with friends-</p>
+                    <div style="display: flex; align-items: center; justify-content: space-evenly;">
+                        <i class="bi bi-facebook facebook" style="font-size: 30px;" onclick="facebook()"></i>
+                        <i class="bi bi-twitter twitter" style="font-size: 30px;" onclick="twitter()"></i>
+                        <i class="bi bi-whatsapp whatsapp" style="font-size: 30px;" onclick="whatsapp()"></i>
+                        <img src="social.png" alt="" style="width: 35px;" class="instagram" onclick="instagram()">
+                    </div>
+                    <hr size="1" color="black">
+                    </p>
+                    <p class="detail" style="font-weight: bold; text-align: center;">
+                        show more details <i class="bi bi-box-arrow-up-right" style="cursor: pointer;"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="row" style="display: flex; margin-top: 20px;">
+                <div class="col-sm dog7" style="width: 300px; height: 550px; padding: 20px; border: 1px solid rgb(248, 198, 206);">
+                    <center>
+                        <img src="dog7.jpg" alt="" style="width: 270px; height: 230px; margin-top: 20px;">
+                    </center>
+                    <div class="details" style="margin-top: 10px;">
+                        <p class="name" style="font-size: 30px;font-weight: bold;color: black;margin-bottom: 10px;">Sheru</p>
+                        <p class="speci" style="font-weight: bold;">Male, Puppy</p>
+                        <p class="address" style="font-weight: bold;">Ahmedabad, Gujarat</p>
+                    </div>
+                    <br>
+                    <hr size="1" color="black">
+                    <div class="contact">
+                        <p class="c_d" style="font-size: 15px; font-weight: bold; margin-top: 3px;">contact details-</p>
+                        <i class="bi bi-person-circle" style="font-size: 40px;"></i>
+                        <h6 class="d_name" style="text-align: left;font-weight: bold;font-size: 15px;">Name:Sanjay</h6>
+                        <h6 class="num" style="display: inline;text-align: left;font-weight: bold;font-size: 15px;">Number:</h6><a href="#">contact now</a>
+                    </div>
+                    <br>
+                    <hr size="1" color="black">
+                    <p class="share">
+                    <p class="share1" style="font-weight: bold;">share with friends-</p>
+                    <div style="display: flex; align-items: center; justify-content: space-evenly;">
+                        <i class="bi bi-facebook facebook" style="font-size: 30px;" onclick="facebook()"></i>
+                        <i class="bi bi-twitter twitter" style="font-size: 30px;" onclick="twitter()"></i>
+                        <i class="bi bi-whatsapp whatsapp" style="font-size: 30px;" onclick="whatsapp()"></i>
+                        <img src="social.png" alt="" style="width: 35px;" class="instagram" onclick="instagram()">
+                    </div>
+                    <hr size="1" color="black">
+                    </p>
+                    <p class="detail" style="font-weight: bold; text-align: center;">
+                        show more details <i class="bi bi-box-arrow-up-right" style="cursor: pointer;"></i>
+                    </p>
+                </div>
+                <div class="col-sm dog8" style="width: 300px; height: 550px; padding: 20px; margin-left: 10px; border: 1px solid rgb(248, 198, 206);">
+                    <center>
+                        <img src="dog8.jpg" alt="" style="width: 270px; height: 230px; margin-top: 20px;">
+                    </center>
+                    <div class="details" style="margin-top: 10px;">
+                        <p class="name" style="font-size: 30px;font-weight: bold;color: black;margin-bottom: 10px;">Rocky</p>
+                        <p class="speci" style="font-weight: bold;">Male, Adulthood</p>
+                        <p class="address" style="font-weight: bold;">Mumbai, Maharashtra</p>
+                    </div>
+                    <br>
+                    <hr size="1" color="black">
+                    <div class="contact">
+                        <p class="c_d" style="font-size: 15px; font-weight: bold; margin-top: 3px;">contact details-</p>
+                        <i class="bi bi-person-circle" style="font-size: 40px;"></i>
+                        <h6 class="d_name" style="text-align: left;font-weight: bold;font-size: 15px;">Name:Yuvraj</h6>
+                        <h6 class="num" style="display: inline;text-align: left;font-weight: bold;font-size: 15px;">Number:</h6><a href="#">contact now</a>
+                    </div>
+                    <br>
+                    <hr size="1" color="black">
+                    <p class="share">
+                    <p class="share1" style="font-weight: bold;">share with friends-</p>
+                    <div style="display: flex; align-items: center; justify-content: space-evenly;">
+                        <i class="bi bi-facebook facebook" style="font-size: 30px;" onclick="facebook()"></i>
+                        <i class="bi bi-twitter twitter" style="font-size: 30px;" onclick="twitter()"></i>
+                        <i class="bi bi-whatsapp whatsapp" style="font-size: 30px;" onclick="whatsapp()"></i>
+                        <img src="social.png" alt="" style="width: 35px;" class="instagram" onclick="instagram()">
+                    </div>
+                    <hr size="1" color="black">
+                    </p>
+                    <p class="detail" style="font-weight: bold; text-align: center;">
+                        show more details <i class="bi bi-box-arrow-up-right" style="cursor: pointer;"></i>
+                    </p>
+                </div>
+                <div class="col-sm dog9" style="width: 300px; height: 550px; padding: 20px; margin-left: 10px; border: 1px solid rgb(248, 198, 206);">
+                    <center>
+                        <img src="dog9.jpg" alt="" style="width: 270px; height: 230px; margin-top: 20px;">
+                    </center>
+                    <div class="details" style="margin-top: 10px;">
+                        <p class="name" style="font-size: 30px;font-weight: bold;color: black;margin-bottom: 10px;">Thunder</p>
+                        <p class="speci" style="font-weight: bold;">Male, Adulthood</p>
+                        <p class="address" style="font-weight: bold;">Bikaner, Rajasthan</p>
+                    </div>
+                    <br>
+                    <hr size="1" color="black">
+                    <div class="contact">
+                        <p class="c_d" style="font-size: 15px; font-weight: bold; margin-top: 3px;">contact details-</p>
+                        <i class="bi bi-person-circle" style="font-size: 40px;"></i>
+                        <h6 class="d_name" style="text-align: left;font-weight: bold;font-size: 15px;">Name:Babu</h6>
+                        <h6 class="num" style="display: inline;text-align: left;font-weight: bold;font-size: 15px;">Number:</h6><a href="#">contact now</a>
+                    </div>
+                    <br>
+                    <hr size="1" color="black">
+                    <p class="share">
+                    <p class="share1" style="font-weight: bold;">share with friends-</p>
+                    <div style="display: flex; align-items: center; justify-content: space-evenly;">
+                        <i class="bi bi-facebook facebook" style="font-size: 30px;" onclick="facebook()"></i>
+                        <i class="bi bi-twitter twitter" style="font-size: 30px;" onclick="twitter()"></i>
+                        <i class="bi bi-whatsapp whatsapp" style="font-size: 30px;" onclick="whatsapp()"></i>
+                        <img src="social.png" alt="" style="width: 35px;" class="instagram" onclick="instagram()">
+                    </div>
+                    <hr size="1" color="black">
+                    </p>
+                    <p class="detail" style="font-weight: bold; text-align: center;">
+                        show more details <i class="bi bi-box-arrow-up-right" style="cursor: pointer;"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 20px; height: 150px;">
+        <div class="col-sm page">
+            <div class="pagination">
+                <a href="#">&laquo</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">&raquo</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
